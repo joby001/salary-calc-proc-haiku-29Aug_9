@@ -1,0 +1,19 @@
+server:
+  port: 7051
+
+spring:
+  application:
+    name: salary-calc-proc
+  cloud:
+    function:
+      definition: processSalaryCalculation
+    stream:
+      bindings:
+        processSalaryCalculation-in-0:
+          destination: salary-calculation-request
+          group: salary-calculation-group
+        processSalaryCalculation-out-0:
+          destination: salary-calculation-response
+      kafka:
+        binder:
+          brokers: localhost:9092

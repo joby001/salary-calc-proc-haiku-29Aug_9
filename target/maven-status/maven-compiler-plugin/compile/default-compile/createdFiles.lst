@@ -1,0 +1,5 @@
+com\loom\salaryproc\service\SalaryCalculationService.class
+com\loom\salaryproc\model\SalaryCalculationResponseEvent.class
+com\loom\salaryproc\event\SalaryCalculationEventHandler.class
+com\loom\salaryproc\SalaryCalculationApplication.class
+com\loom\salaryproc\model\SalaryCalculationRequestEvent.class
